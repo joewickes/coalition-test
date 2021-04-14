@@ -2,6 +2,7 @@ html, body {
   margin: 0px;
   padding: 0px;
   width: 100%;
+  font-family: sans-serif;
 }
 
 @media all and (min-width: 800px) {
@@ -11,10 +12,34 @@ html, body {
     height: 60px;
   }
   
-  .header-left, .header-middle, .header-right {
+  .header-left {
+    flex: .8;
+    display: flex;
+    align-items: center;
+  }
+  
+  .header-middle {
+    flex: 1.2;
+    display: flex;
+    align-items: center;
+  }
+  
+  .header-right {
     flex: 1;
     display: flex;
     align-items: center;
+    font-weight: bold;
+    font-style: italic;
+    font-size: 70%;
+    color: inherit;
+  }
+
+  .top {
+    color: white;
+  }
+
+  .sticky {
+    color: white;
   }
 
   .header-left {
@@ -26,6 +51,11 @@ html, body {
     width: 40px;
     border: 1px solid lightgray;
     border-radius: 50%;
+    overflow: hidden;
+  }
+
+  .img-top img {
+    height: 100%;
   }
 
   .header-right {
@@ -36,13 +66,67 @@ html, body {
     margin-right: 40px;
     color: inherit;
     text-decoration: none;
-    border-bottom: 1px solid black;
     padding-right: 5px;
+  }
+
+  .top a {
+    border-bottom: 1px solid white;
+  }
+
+  .sticky a {
+    border-bottom: 1px solid ;
   }
 
   .landing-page {
     height: 100vh;
-    background-image: none;
+    overflow: hidden;
+    background: url("./ct/lp.jpg");
+    background-size: 100vw;
+  }
+
+  .landing-page img {
+    width: 100%;
+  }
+
+  .lp-sections {
+    height: 100%;
+    display: flex;
+  }
+
+  .lp-middle {
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .lp-middle p {
+    margin: 0px;
+    
+  }
+
+  .lat  {
+    font-size: 68px;
+    font-weight: bold;
+    color: rgb(70, 70, 70);
+  }
+
+  .lab {
+    font-weight: bold;
+    font-size: 80px;
+    color: rgb(53, 53, 99);
+  }
+
+  .lp-left {
+    flex: .8
+  }
+
+  .lp-middle {
+    flex: 1.2
+  }
+
+  .lp-right {
+    flex: 1;
   }
 }
 
