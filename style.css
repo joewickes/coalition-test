@@ -297,20 +297,60 @@ header {
 
 .climb-nav {
   display: flex;
-  background-color: rgb(49,48,80);
   width: 100%;
+  background-color: rgba(31, 31, 65, 0.918);
 }
 
 .cnl {
-  flex: 1
+  flex: 1;
 }
 
-.climb-nav ul {
+.cnm {
   flex: 2;
-  list-style-type: none;
+}
+
+.mountain-nav {
   display: flex;
+  list-style-type: none;
+  padding: 0px;
+  margin: 0px;
+}
+
+.mountain-nav li {
+  padding: 5px 10px;
+  color: gray;
+}
+
+.mountain-nav li:hover {
+  background-color: gray;
+  color: rgba(31, 31, 65, 0.918);
+  text-decoration: underline;
+}
+
+.mountain-nav li p {
+  margin: 0px;
+  height: 100%;
+  width: 100%;
+  font-weight: bold;
+  
+}
+
+.mountain-nav li p:parent:hover {
+  color: rgba(31, 31, 65, 0.918);
+  border-bottom:1px solid rgba(31, 31, 65, 0.918);
 }
 
 .cnr {
   flex: 3;
 }
+
+/* 
+
+Technically the time constraints for this were supposed to be an hour
+but I blew past that. Now that I've spent longer on it than I probably should have,
+I want to make sure that I get something turned in. If I had the time, I would
+continue to style the bottom section, make more things responsive, make the 
+carousel functional, etc. This was super fun to figure out how to recreate this
+design, thanks for the challenge!
+
+*/
