@@ -167,13 +167,13 @@ html, body {
   align-items: center;
 }
 
-.history-top .title-left {
+.title-left {
   flex: 2;
   display: flex;
   justify-content: flex-end;
 }
 
-.history-top .title-right {
+.title-right {
   flex: 5;
   display: flex;
   align-items: flex-start;
@@ -181,7 +181,7 @@ html, body {
   flex-direction: column;
 }
 
-.history-top .title-left p {
+.title-left p {
   margin: 0px;
   padding: 0px;
   color:rgba(53, 53, 99, 0.425);
@@ -189,7 +189,7 @@ html, body {
   font-weight: bold;
 }
 
-.history-top .title-right h2 {
+.title-right h2 {
   margin: 0px;
   padding: 0px;
   color:rgb(53, 53, 99);
@@ -222,4 +222,54 @@ html, body {
 .history-carousel {
   flex: 2;
   background-color: rgba(31, 31, 65, 0.918);
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.history-carousel .carousel {
+  width: 75%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.carousel div {
+  flex: 1;
+  padding: 5px;
+}
+
+.carousel div img {
+  width: 100%;
+}
+
+.history-carousel .buttons {
+  display: flex;
+  width: 50px;
+  justify-content: space-evenly;
+}
+
+.history-carousel .buttons div {
+  border-radius: 50%;
+  height: 8px;
+  width: 8px;
+  background-color: gray;
+}
+
+.history-carousel .buttons div:hover {
+  background-color: white;
+}
+
+.climb {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.climb-top {
+  width: 100%;
+  display: flex;
+  align-items: center;
 }
