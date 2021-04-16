@@ -157,4 +157,69 @@ html, body {
   background: url("./ct/hist.jpg");
   background-size: 100vw;
   height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.history-top {
+  flex: 2;
+  display: flex;
+  align-items: center;
+}
+
+.history-top .title-left {
+  flex: 2;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.history-top .title-right {
+  flex: 5;
+  display: flex;
+  align-items: flex-start;
+  text-align:start;
+  flex-direction: column;
+}
+
+.history-top .title-left p {
+  margin: 0px;
+  padding: 0px;
+  color:rgba(53, 53, 99, 0.425);
+  font-size: 100px;
+  font-weight: bold;
+}
+
+.history-top .title-right h2 {
+  margin: 0px;
+  padding: 0px;
+  color:rgb(53, 53, 99);
+}
+
+.title-right div {
+  height: 20px;
+  width: 20px;
+  background-color: rgba(53, 53, 99, 0.425);
+  margin-top: 20px;
+}
+
+.history-middle {
+  flex: 3;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  width: 100%;
+}
+
+.history-middle div {
+  width: 50%;
+}
+
+.history-middle div p {
+  margin: 0px;
+  padding: 0px;
+}
+
+.history-carousel {
+  flex: 2;
+  background-color: rgba(31, 31, 65, 0.918);
 }
