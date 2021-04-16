@@ -38,10 +38,6 @@ html, body {
     color: white;
   }
 
-  .sticky {
-    color: white;
-  }
-
   .header-left {
     justify-content: flex-end;
   }
@@ -58,19 +54,46 @@ html, body {
     height: 100%;
   }
 
+  .header-middle {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+  }
+
+  .header-middle p {
+    margin: 0px;
+    padding: 0px;
+  }
+
+  .hmt {
+    color:rgb(70, 70, 70);
+  }
+
+  .hmb {
+    color:rgb(53, 53, 99);
+    font-weight: bold;
+    font-size: 17px;
+  }
+ 
   .header-right {
     justify-content: flex-start;
   }
 
   .header-right a {
     margin-right: 40px;
-    color: inherit;
     text-decoration: none;
     padding-right: 5px;
   }
 
   .top a {
+    color: white;
     border-bottom: 1px solid white;
+  }
+
+  .mtop a {
+    color:rgb(70, 70, 70);
+    border-bottom: 1px solid rgb(70, 70, 70);
   }
 
   .sticky a {
@@ -130,3 +153,8 @@ html, body {
   }
 }
 
+.history {
+  background: url("./ct/hist.jpg");
+  background-size: 100vw;
+  height: 100vh;
+}
